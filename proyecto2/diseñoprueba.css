@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+form {
+    max-width: 600px; /* Ajuste de ancho máximo */
+    margin: 0 auto; /* Centrado */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, select, textarea {
+    width: 100%; /* Ancho completo */
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em; /* Tamaño de fuente estándar */
+}
+
+button {
+    background-color: #4CAF50; /* Color original */
+    color: white;
+    padding: 10px 15px; /* Tamaño del botón */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px; /* Margen superior para separación */
+}
+
+button:hover {
+    background-color: #45a049; /* Color al pasar el mouse */
+}
+
+.Monto-container, .input-group {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    gap: 10px; /* Espacio entre los campos */
+    margin-bottom: 15px; /* Espacio debajo de los campos */
+}
+
+.Monto-container > div, .input-group div {
+    flex: 1; /* Cada campo ocupa el mismo espacio */
+}
+
+#numeroCheque, #fecha {
+    width: auto; /* Cambiar a auto para que ocupen espacio mínimo necesario */
+    max-width: 150px; /* Limitar el ancho máximo */
+}
+
+textarea {
+    width: 100%; /* Ancho total */
+    resize: none; /* Desactivar el cambio de tamaño */
+}
+
+.button-container {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+    margin-top: 20px; /* Espacio arriba de los botones */
+}
+
+#mensajeExito {
+    color: green; /* Color del mensaje de éxito */
+    margin-top: 20px;
+}
+
+/* Estilos para la disposición de los formularios */
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+#formBuscarCheque {
+    flex: 1; /* Toma un espacio proporcional */
+    margin-right: 20px; /* Espacio entre formularios */
+    max-width: 300px; /* Ancho máximo del formulario de búsqueda */
+}
+
+#formCheque {
+    flex: 2; /* Toma más espacio que el formulario de búsqueda */
+}
+
+/* Opcional: ajustar el tamaño de las etiquetas y campos */
+label {
+    font-size: 0.9em; /* Tamaño de fuente más pequeño para las etiquetas */
+}
+
+input, select, textarea {
+    font-size: 0.9em; /* Tamaño de fuente más pequeño para los campos */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+    }
+
+    #formBuscarCheque {
+        margin-right: 0; /* Sin margen en pantallas pequeñas */
+        margin-bottom: 20px; /* Espacio debajo del formulario de búsqueda */
+    }
+}
